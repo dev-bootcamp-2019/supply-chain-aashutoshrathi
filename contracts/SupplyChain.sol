@@ -37,8 +37,8 @@ contract SupplyChain {
     uint sku;
     uint price;
     State state;
-    address seller;
-    address buyer;
+    address payable seller;
+    address payable buyer;
   }
 
   /* Create 4 events with the same name as each possible State (see above)
@@ -81,7 +81,7 @@ contract SupplyChain {
     _;
   }
   modifier received(uint _sku) {
-    require(items[_sku].state == State.Received);
+    require(items[_sku].state == State.Recieved);
     _;
   }
 
@@ -137,7 +137,7 @@ contract SupplyChain {
     shipped(sku)
     verifyCaller(items[sku].buyer)
   {
-    items[sku].state = State.Received;
+    items[sku].state = State.Recieved;
     emit Recieved(sku);
   }
 
