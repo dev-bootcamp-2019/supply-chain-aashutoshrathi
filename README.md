@@ -1,5 +1,7 @@
 # Supply Chain Exercise
 
+[![Build Status](https://travis-ci.org/dev-bootcamp-2019/supply-chain-aashutoshrathi.svg?branch=master)](https://travis-ci.org/dev-bootcamp-2019/supply-chain-aashutoshrathi)
+
 The Supply Chain directory is a truffle project that contains the required contract, migration and test files. In this exercise you are going to implement the SupplyChain.sol contract and write some test in Solidity.
 
 Clone this repo to your local machine.
@@ -9,6 +11,22 @@ The contract contains a framework and comments to implement the contract. Follow
 To test your implementation start your development blockchain by running `$ truffle develop` from the terminal in the project directory. From the truffle console, compile and migrate the contracts by running `compile` and `migrate`. You can run the pre-written tests by running `test`.
 
 If your tests do not pass, modify the contract, recompile, redeploy and retest. Iterate until all of the tests pass.
+
+## Develop 🔨
+
+- Test
+
+```sh
+truffle test
+```
+
+- Compile and migrate
+
+```sh
+truffle console
+> compile
+> migrate
+```
 
 ## A note on testing
 
